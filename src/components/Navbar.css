@@ -1,3 +1,11 @@
+.navbar-logo-img {
+  height: 46px;
+  /* Sesuaikan tinggi logo sesuai selera */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .navbar-header {
   position: relative;
   top: 0;

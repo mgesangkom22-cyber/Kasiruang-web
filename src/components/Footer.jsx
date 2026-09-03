@@ -8,12 +8,11 @@ export default function Footer() {
       <div className="footer-container container">
         {/* Left: Mini Logo Badge */}
         <Link to="/" className="footer-logo" aria-label="Kasiruang Homepage">
-          <div className="kasiruang-logo-badge footer-logo-badge">
-            <span>kas</span>
-            <span>iru</span>
-            <span>ang</span>
-            <span className="logo-arrow">↑</span>
-          </div>
+          <img
+            src="/images/kasiruang/logo.png"
+            alt="Logo Kasiruang"
+            style={{ height: '40px', width: 'auto' }}
+          />
         </Link>
 
         {/* Right: KASIRUANG ↗ text */}
