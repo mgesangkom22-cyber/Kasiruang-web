@@ -38,19 +38,19 @@ export default function Navbar() {
       <nav className="navbar-container container">
         {/* Logo */}
         <Link to="/" className="navbar-logo" aria-label="Kasiruang Homepage">
-          <div className="kasiruang-logo-badge">
-            <span>kas</span>
-            <span>iru</span>
-            <span>ang</span>
-            <span className="logo-arrow">↑</span>
-          </div>
+          <img
+            src="/images/kasiruang/logo.png"
+            alt="Logo Kasiruang"
+            className="navbar-logo-img"
+          />
         </Link>
+
 
         {/* Desktop Nav Links */}
         <ul className="navbar-links">
           <li>
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`nav-item ${isHome ? 'active' : ''}`}
             >
               Beranda
@@ -58,8 +58,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link 
-              to="/menu" 
+            <Link
+              to="/menu"
               className={`nav-item ${isMenu ? 'active' : ''}`}
             >
               Menu
@@ -67,8 +67,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <a 
-              href="#location-section" 
+            <a
+              href="#location-section"
               onClick={handleLocationClick}
               className="nav-item"
             >
@@ -76,9 +76,9 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a 
-              href={businessData.instagram} 
-              target="_blank" 
+            <a
+              href={businessData.instagram}
+              target="_blank"
               rel="noopener noreferrer"
               className="nav-item nav-instagram"
             >
@@ -88,7 +88,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Hamburger Toggle */}
-        <button 
+        <button
           className="navbar-toggle"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle Navigation Menu"
