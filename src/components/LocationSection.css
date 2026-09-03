@@ -1,0 +1,110 @@
+.location-section {
+  padding: 3.5rem 1.25rem 4rem 1.25rem;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.location-heading {
+  font-family: var(--font-handwriting);
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  color: var(--blue);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.location-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.location-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-pin-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.location-name {
+  font-family: var(--font-handwriting);
+  font-size: 1.75rem;
+  color: var(--blue);
+}
+
+.location-address {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--text);
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+.location-maps-btn-wrap {
+  margin-top: 0.5rem;
+}
+
+.maps-btn {
+  font-size: 1.15rem;
+}
+
+.location-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  font-family: var(--font-handwriting);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--blue);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+.social-dot {
+  color: var(--muted);
+}
+
+.map-doodle-container {
+  background-color: var(--paper);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px dashed var(--border-paper);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-doodle-svg {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

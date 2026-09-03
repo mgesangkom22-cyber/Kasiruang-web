@@ -1,0 +1,12 @@
+{
+  "name": "Kasiruang",
+  "tagline": "Ruang Buat Ngopi & Nongkrong",
+  "instagram": "https://instagram.com",
+  "whatsapp": "https://wa.me/628123456789",
+  "maps": "https://maps.google.com",
+  "address": "Jalan Contoh No. 123, Contoh Desa, Contoh Kecamatan, Yogyakarta",
+  "openingHours": {
+    "mondaySaturday": "16.00 - 23.00",
+    "sunday": "08.00 - 23.00"
+  }
+}

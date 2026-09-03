@@ -1,0 +1,124 @@
+.ngopag-section {
+  padding: 2.5rem 1.25rem;
+}
+
+.ngopag-card {
+  background-color: var(--blue);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 3rem 3rem;
+  position: relative;
+  box-shadow: 4px 8px 24px rgba(18, 79, 184, 0.3);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.ngopag-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.ngopag-left {
+  position: relative;
+}
+
+.ngopag-sun-doodle {
+  margin-bottom: 0.75rem;
+}
+
+.ngopag-heading {
+  font-family: var(--font-handwriting);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.ngopag-subheading {
+  font-family: var(--font-handwriting);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.ngopag-copy {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+.ngopag-divider {
+  width: 1px;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ngopag-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hours-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hours-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.hours-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-name {
+  font-family: var(--font-handwriting);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.day-time {
+  font-family: var(--font-handwriting);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--yellow);
+  letter-spacing: 0.5px;
+}
+
+.hours-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--yellow);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+@media (max-width: 850px) {
+  .ngopag-card {
+    padding: 2.25rem 1.5rem;
+  }
+
+  .ngopag-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ngopag-divider {
+    width: 100%;
+    height: 1px;
+  }
+}

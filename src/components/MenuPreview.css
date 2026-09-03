@@ -1,0 +1,185 @@
+.menu-preview-section {
+  padding: 4rem 1.25rem;
+}
+
+.menu-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.preview-heading {
+  font-family: var(--font-handwriting);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--blue);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.preview-category-title {
+  font-family: var(--font-handwriting);
+  font-size: 1.75rem;
+  color: var(--blue);
+  margin-bottom: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.preview-item-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2.25rem;
+  max-width: 420px;
+}
+
+.preview-item {
+  display: flex;
+  align-items: baseline;
+  font-family: var(--font-handwriting);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.item-name {
+  white-space: nowrap;
+}
+
+.item-dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted var(--muted);
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}
+
+.item-price {
+  color: var(--blue);
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+.preview-cta {
+  display: flex;
+}
+
+.preview-btn {
+  font-size: 1.15rem;
+  padding: 0.65rem 1.75rem;
+}
+
+/* Polaroid Collage */
+.menu-preview-right {
+  position: relative;
+  min-height: 440px;
+}
+
+.polaroid-collage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+}
+
+.polaroid-collage .polaroid {
+  position: absolute;
+  width: 220px;
+}
+
+.polaroid-1 {
+  top: 10px;
+  left: 20px;
+  transform: rotate(-6deg);
+  z-index: 2;
+}
+
+.polaroid-1 img {
+  height: 150px;
+}
+
+.polaroid-2 {
+  top: 60px;
+  right: 10px;
+  transform: rotate(7deg);
+  z-index: 3;
+}
+
+.polaroid-2 img {
+  height: 160px;
+}
+
+.polaroid-3 {
+  bottom: 20px;
+  left: 0px;
+  transform: rotate(4deg);
+  z-index: 4;
+}
+
+.polaroid-3 img {
+  height: 155px;
+}
+
+.polaroid-4 {
+  bottom: 0px;
+  right: 25px;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.polaroid-4 img {
+  height: 145px;
+}
+
+.doodle-sparkles {
+  top: -15px;
+  right: 80px;
+  transform: rotate(12deg);
+}
+
+@media (max-width: 900px) {
+  .menu-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .menu-preview-right {
+    min-height: 380px;
+  }
+
+  .polaroid-collage .polaroid {
+    width: 180px;
+  }
+
+  .polaroid-1 { top: 0; left: 10px; }
+  .polaroid-2 { top: 30px; right: 0px; }
+  .polaroid-3 { bottom: 10px; left: 10px; }
+  .polaroid-4 { bottom: 0px; right: 10px; }
+}
+
+@media (max-width: 480px) {
+  .preview-item-list {
+    max-width: 100%;
+  }
+
+  .polaroid-collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-height: auto;
+  }
+
+  .polaroid-collage .polaroid {
+    position: relative;
+    width: calc(50% - 0.5rem);
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  .polaroid-collage .polaroid img {
+    height: 120px;
+  }
+}

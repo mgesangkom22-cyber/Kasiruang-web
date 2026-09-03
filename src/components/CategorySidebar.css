@@ -1,0 +1,188 @@
+.category-sidebar-wrap {
+  position: relative;
+}
+
+/* Mobile Category Chips Bar */
+.mobile-category-chips {
+  display: none;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.75rem 0.25rem 1.25rem 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.mobile-category-chips::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.chip-button {
+  font-family: var(--font-handwriting);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  background-color: var(--paper);
+  border: 1.5px solid var(--border-paper);
+  padding: 0.35rem 1.1rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.chip-button.active {
+  background-color: var(--blue);
+  color: #ffffff;
+  border-color: var(--blue);
+  box-shadow: var(--shadow-sticker);
+}
+
+/* Desktop Sidebar Sticky Note */
+.desktop-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: sticky;
+  top: 90px;
+}
+
+.category-torn-card {
+  background-color: var(--paper);
+  border-radius: 12px;
+  padding: 1.75rem 1.25rem;
+  border: 1px dashed var(--border-paper);
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.category-title {
+  font-family: var(--font-handwriting);
+  font-size: 1.5rem;
+  color: var(--blue);
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.title-underline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--blue);
+  border-radius: 2px;
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-pill-btn {
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-handwriting);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.category-pill-btn:hover {
+  background-color: rgba(18, 79, 184, 0.08);
+  color: var(--blue);
+}
+
+.category-pill-btn.active {
+  background-color: var(--blue);
+  color: #ffffff;
+  box-shadow: var(--shadow-sticker);
+}
+
+.doodle-category-arrow {
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+
+/* Sidebar Blue Ngopag Card */
+.sidebar-ngopag-card {
+  background-color: var(--blue);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  box-shadow: var(--shadow-sticker);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.ngopag-card-sun {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-ngopag-title {
+  font-family: var(--font-handwriting);
+  font-size: 1.75rem;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-ngopag-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.35;
+  margin-bottom: 1.25rem;
+}
+
+.sidebar-ngopag-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ngopag-hour-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.hour-label {
+  font-family: var(--font-handwriting);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hour-val {
+  font-family: var(--font-handwriting);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--yellow);
+}
+
+.sidebar-hours-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--yellow);
+  opacity: 0.8;
+  border-radius: 2px;
+  margin: 0.2rem 0;
+}
+
+@media (max-width: 850px) {
+  .desktop-sidebar-content {
+    display: none;
+  }
+
+  .mobile-category-chips {
+    display: flex;
+  }
+}

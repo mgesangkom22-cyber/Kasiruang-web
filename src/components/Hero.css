@@ -1,0 +1,151 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.hero-banner-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: var(--blue-dark);
+}
+
+.hero-banner-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 56, 141, 0.2) 0%, rgba(12, 56, 141, 0.5) 100%);
+}
+
+.hero-torn-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 0;
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  margin-top: -30px;
+  z-index: 5;
+}
+
+.hero-paper-card {
+  background-color: var(--paper);
+  border-radius: 16px;
+  padding: 3rem 2rem 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-card);
+  border: 1px dashed var(--border-paper);
+}
+
+.hero-title {
+  font-family: var(--font-handwriting);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.hero-badge-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge {
+  font-size: 1.35rem;
+  padding: 0.35rem 1.6rem;
+}
+
+.hero-cta-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn {
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem;
+  box-shadow: var(--shadow-sticker);
+}
+
+/* Doodles positioning */
+.doodle {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.doodle-star-left {
+  top: 40px;
+  left: 30px;
+  transform: rotate(-12deg);
+}
+
+.doodle-smiley-right {
+  top: 25px;
+  right: 40px;
+  transform: rotate(10deg);
+}
+
+.doodle-cat-right {
+  bottom: 25px;
+  right: 35px;
+  transform: rotate(5deg);
+}
+
+@media (max-width: 768px) {
+  .hero-banner-wrap {
+    height: 180px;
+  }
+
+  .hero-paper-card {
+    padding: 2.25rem 1.25rem 2rem 1.25rem;
+  }
+
+  .doodle-star-left {
+    top: 15px;
+    left: 15px;
+  }
+
+  .doodle-smiley-right {
+    top: 15px;
+    right: 15px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .doodle-cat-right {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 32px;
+  }
+}
